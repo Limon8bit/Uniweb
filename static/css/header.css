@@ -1,0 +1,100 @@
+header{
+    width: 925px;
+    height: 430px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../images/slider/1.png');
+    background-position-y: 12px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+    animation: slider 30s infinite step-start;
+    /* animation-fill-mode: forwards ; */
+}
+
+.header-top__wrap{
+    width: 100%;
+    padding: 7px 22px 0 22px;
+    background-color: #4e2c1e;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-family: 'BookAntiqua';
+}
+
+.header-top__number{
+    color: #fff;
+    font-size: 26px;
+    align-self: center;
+}
+
+.header-top__title{
+    width: 290px;
+    height: 40px;
+    margin-left: -15px;
+}
+
+.header-top-menu{
+    width: 173px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-top-menu-button{
+    height: 24px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-image: -moz-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(234,207,143) 13%, rgb(232,196,120) 58%, rgb(255,249,224) 96%, rgb(255,249,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(234,207,143) 13%, rgb(232,196,120) 58%, rgb(255,249,224) 96%, rgb(255,249,224) 100%);
+    border: 1px solid rgb(216, 201, 146);
+    font-size: 16px;
+    font-family: "BookAntiqua";
+    color: rgb(71, 40, 0);
+    line-height: 1.2;
+    text-shadow: 0 1px 1px rgba(17, 17, 26, 0.46);
+    cursor: pointer;
+}
+
+.header-top-menu-button:focus{
+    background-image: -moz-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    border: 1px solid rgb(171, 110, 23);
+    color: rgb(255, 255, 255);
+}
+
+@keyframes slider {
+    16.7% {
+        background-image: url(../images/slider/1.png);
+    }
+
+    33.4%{
+        background-image: url(../images/slider/2.png);
+    }
+
+    50%{
+        background-image: url(../images/slider/3.png);
+    }
+
+    67%{
+        background-image: url(../images/slider/4.png);
+    }
+
+    83%{
+        background-image: url(../images/slider/5.png);
+    }
+
+    100%{
+        background-image: url(../images/slider/6.png);
+    }
+    
+}

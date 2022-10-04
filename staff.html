@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/header.css">
+    <link rel="stylesheet" href="./static/css/menu.css">
+    <link rel="stylesheet" href="./static/css/index.css">
+    <link rel="stylesheet" href="./static/css/staff.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> 
+    <title>Ваш дом</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-top__wrap">
+                <div class="header-top">
+                    <div class="header-top__number">
+                        8 (4872) 31-13-45
+                    </div>
+                    <img src="./static/images/title.png" class='header-top__title' alt="">
+                    <div class="header-top-menu">
+                        <button class="header-top-menu-button">
+                            Оставить заявку
+                        </button>
+                        <button class="header-top-menu-button">
+                            Отправить резюме
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                    <div class="left-block">
+                        <button class="block">
+                            <span>главная</span>
+                        </button>
+                        <button class="block">
+                            <span>подобрать персонал</span>
+                            <!-- Тут может возникать ошибка, но она связана с пустыми сслыками -->
+                            <div class="block-menu">
+                                <a href="#">О нас</a>
+                                <a href="#">Задать вопрос</a>
+                                <a href="#">Это интересно</a>
+                                <a href="#">Отзывы</a>
+                            </div>
+                        </button>
+                        <button class="block">
+                            <span>цены</span>
+                        </button>
+                    </div>
+                    <div class="right-block">
+                        <button class="block">
+                            <span>оставить заявку</span>
+                        </button>
+                        <button class="block">
+                            <span>оставить вакансию</span>
+                        </button>
+                        <button class="block">
+                            <span>контакты</span>
+                        </button>
+                    </div>
+                </div>
+        </header>
+        <main>
+            <div class="main-dots">
+                <div class="main-dots__dot active_dot">
+                </div>
+                <div class="main-dots__dot">
+                </div>
+                <div class="main-dots__dot">
+                </div>
+                <div class="main-dots__dot">
+                </div>
+                <div class="main-dots__dot">
+                </div>
+                <div class="main-dots__dot">
+                </div>
+            </div>
+
+            <div class="get_staff">
+                <h2 class="get_staff__title">Подобрать персонал</h2>
+                <div class="get_staff-form_wrap">
+                    <form action="#" method="post">
+                        <div class="get_staff-form_wrap-competition">
+                            <label for="competition">Показать только</label>
+                            <input type="text" name="competition" value="Няня" class="get_staff-form_wrap-competition-input" readonly>
+                            <div class="get_staff-form_wrap-competition-select">
+                                <div class="get_staff-form_wrap-competition-select__option">
+                                    Садовник
+                                </div>
+                                <div class="get_staff-form_wrap-competition-select__option">
+                                    Водитель
+                                </div>
+                                <div class="get_staff-form_wrap-competition-select__option">
+                                    Дворник
+                                </div>
+                                <div class="get_staff-form_wrap-competition-select__option">
+                                    Гувернантка
+                                </div>
+                            </div>
+                        </div>
+                        <div class="get_staff-form_wrap-staff_description">
+                            <div class="get_staff-form_wrap-staff_description-expierence">
+                                <label for="min_exp">Стаж от</label>
+                                <input type="text" name="min_exp" placeholder="1">
+                                <label for="max_exp">до</label>
+                                <input type="text" name="max_exp" placeholder="30">
+                                <span>лет</span>
+                            </div>
+                            <div class="get_staff-form_wrap-staff_description-age">
+                                <label for="min_age">Возраст от</label>
+                                <input type="text" name="min_age" placeholder="25">
+                                <label for="max_age">до</label>
+                                <input type="text" name="max_age" placeholder="65">
+                                <span>лет</span>
+                            </div>
+                        </div>
+                        <input type="submit" value="Подобрать" class="get_staff-form_wrap__submit">
+                    </form>
+                </div>
+                <div class="get_staff-grid">
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            фио
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            должность
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            возраст
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            стаж работы
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Лопухова Надежда Александровна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Гувернантка
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            45
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Ермакова Надежда Ивановна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Няня
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            30
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            5 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Филимонов Евгений Семенович
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Садовник
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            45
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Лопухова Надежда Александровна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Уборщица
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            35
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            7 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Миронов Юрий Герасимович
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Конюх
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            60
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Новикова Нина Алексеевна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Повар
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            55
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            30 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Лопухова Надежда Александровна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Гувернантка
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            45
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Лопухова Надежда Александровна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Гувернантка
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            45
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                    <div class="get_staff-grid-line">
+                        <div class="get_staff-grid-line__name grid-line__block">
+                            Лопухова Надежда Александровна
+                        </div>
+                        <div class="get_staff-grid-line__competition grid-line__block">
+                            Гувернантка
+                        </div>
+                        <div class="get_staff-grid-line__age grid-line__block">
+                            45
+                        </div>
+                        <div class="get_staff-grid-line__expierence grid-line__block">
+                            15 лет
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text">
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу будущего благосостояния, построив свою карьеру - вот основная категорий заказчиков, которые ежедневно пользуются услугами нашей компании по подбору домашнего персонала.
+                    Заказ няни, сиделки или домработницы является благом не только для женщины, которая имеет возможность строить свою карьеру или получить, наконец, передышку от выполнения бесконечных домашних обязанностей, но и для всех остальных членов семьи, которые могут провести вместе свободный вечер или выходные. А доступные цены, которые устанавливает на свои услуги наша компания, и предлагаемый нами широкий выбор различных категорий домашнего персонала делают исключительно удобным и, главное, безопасным процесс поиска няни для малыша, сиделки для пожилых членов семьи или домработницы для квартиры или загородного особняка.
+                </p>
+                <p>
+                    Наличие в доме обслуживающего персонала - водителя, няни, гувернантки, горничной, домработницы - это вовсе не дань моде и не причуды избалованных нежданно свалившимся богатством нуворишей. Напротив, услугами сиделки или няни пользуются сегодня те, кто отлично знает цену деньгам и своему времени. Люди, для которых важно не только вырастить ребенка, но и создать основу
+                </p>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-top">
+                <ul class="footer-top-navigation">
+                    <li class="footer-top-navigation__item">
+                        главная
+                    </li>
+                    <li class="footer-top-navigation__item">
+                        подобрать персонал
+                    </li>
+                    <li class="footer-top-navigation__item">
+                        цены
+                    </li>
+                    <li class="footer-top-navigation__item">
+                        главная
+                    </li>
+                    <li class="footer-top-navigation__item">
+                        подобрать персонал
+                    </li>
+                    <li class="footer-top-navigation__item">
+                        цены
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom__tel">
+                    8 (4872) 31-13-45
+                </div>
+                <div class="footer-bottom__uweb_logo">
+                    Разработка и продвижение сайта компанией «Юни Веб» -
+                    <img src="./static/images/uw_logo.png" alt="">
+                </div>
+            </div>
+        </footer>
+    </div>
+    </div>
+    <script src="./static/js/menu.js"></script>
+    <script src="./static/js/staffSelect.js"></script>
+</body>
+</html>

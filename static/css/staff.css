@@ -1,0 +1,276 @@
+.get_staff{
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 22px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.get_staff__title{
+    font-size: 25px;
+    font-family: "BookAntiqua";
+    color: rgb(78, 44, 30);
+    line-height: 1.2;
+}
+
+.get_staff-form_wrap{
+    margin-top: 30px;
+    width: calc(100% - 18px);
+    background-color: rgba(190, 137, 63, 0.14);
+    box-shadow: 
+        0px 1px 2px 0px rgba(255, 255, 255, 0.5),
+        inset 0px 0px 1px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 1px;
+    position: relative;
+}
+
+.get_staff-form_wrap::before{
+    content: '';
+    background-image: url('../images/ornament-l-m.png');
+    height: 102px;
+    width: 64px;
+    position: absolute;
+    top: -11px;
+    left: -11px;
+}
+
+.get_staff-form_wrap::after{
+    content: '';
+    background-image: url('../images/ornament-r-m.png');
+    height: 102px;
+    width: 64px;
+    position: absolute;
+    top: -11px;
+    right: -11px;
+}
+
+.get_staff-form_wrap form{
+    padding: 15px 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.get_staff-form_wrap label, span{
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(69, 37, 10);
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+}
+
+.get_staff-form_wrap-competition{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding-top: 5px;
+    position: relative;
+}
+
+.get_staff-form_wrap-competition label{
+    padding-left: 2px;
+}
+
+.get_staff-form_wrap-competition input{
+    padding-left: 13px;
+    outline: 0;
+    height: 32px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    border: 1px solid #ab6e17;
+    border-radius: 1px;
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(69, 37, 10);
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('../images/select_background.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    z-index: 2;
+    position: relative;
+    cursor: pointer;
+}
+
+.get_staff-form_wrap-competition::after{
+    content: '';
+    background-image: url('../images/select_arrow.png');
+    width: 19px;
+    height: 11px;
+    position: absolute;
+    right: 4px;
+    bottom: 8px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.get_staff-form_wrap-competition-select{
+    width: 228px;
+    height: 160px;
+    border: 1px solid rgb(177, 177, 177);
+    position: absolute;
+    top: 42.5px;
+    left: 0;
+    background-color: rgb(252,235,198);
+    z-index: 1;
+    display: none;
+    flex-direction: column-reverse;
+}
+
+.get_staff-form_wrap-competition-select__option{
+    width: 100%;
+    cursor: pointer;
+    padding-left: 12px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(69, 37, 10);
+    line-height: 1.778;  
+}
+
+.get_staff-form_wrap-competition-select__option:hover{
+    background-color: rgb(216, 175, 117);
+}
+
+.get_staff-form_wrap-staff_description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.get_staff-form_wrap-staff_description input{
+    height: 34px;
+    width: 40px;
+    border: 1px solid rgb(177, 177, 177);
+    border-radius: 1px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Verdana";
+    color: rgb(69, 37, 10);
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+}
+
+.get_staff-form_wrap-staff_description input::placeholder{
+        font-size: 18px;
+        font-family: "Verdana";
+        color: rgb(69, 37, 10);
+        line-height: 1.2;
+        text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+}
+
+.get_staff-form_wrap-staff_description-age{
+    margin-top: 7px;
+}
+
+.get_staff-form_wrap__submit{
+    border: 1px solid rgb(171, 110, 23);
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-image: -moz-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    width: 145px;
+    height: 29px;
+    font-size: 14px;
+    font-family: "Verdana";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+    cursor: pointer;
+}
+
+.get_staff-form_wrap__submit:hover{
+    border-color: rgb(199, 168, 101);
+    background-image: -moz-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(234,207,143) 13%, rgb(232,196,120) 58%, rgb(255,249,224) 96%, rgb(255,249,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(234,207,143) 13%, rgb(232,196,120) 58%, rgb(255,249,224) 96%, rgb(255,249,224) 100%);
+    color: rgb(78, 44, 30);
+}
+
+
+.get_staff-grid{
+    margin-top: 30px;
+    width: 880px;
+    display: flex;
+    flex-direction: column;
+}
+
+.get_staff-grid-line{
+    display: flex;
+}
+
+.get_staff-grid-line:first-child{
+    border: 1px solid #e9c06b;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgb(116, 66, 1);
+}
+
+.get_staff-grid-line:first-child .grid-line__block{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+    font-family: "Arial";
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);  
+}
+
+.get_staff-grid-line:nth-child(even) {
+        border:1px solid rgb(211, 168, 108);
+        background-color: rgb(255, 255, 255);
+}
+
+.get_staff-grid-line:nth-child(2){
+    border-top: 0;
+}
+
+.grid-line__block{
+    padding: 9px 4px;
+    text-align: center;
+    font-size: 15px;
+    font-family: "Verdana";
+    color: rgb(101, 79, 61);
+    line-height: 1.2;
+}
+
+.get_staff-grid-line:nth-child(odd) .grid-line__block{
+    border-right:1px solid rgb(211, 168, 108);
+}
+
+.get_staff-grid-line:nth-child(odd) .grid-line__block:last-child{
+    border: 0;
+}
+
+.get_staff-grid-line:nth-child(3) .grid-line__block:first-child,
+.get_staff-grid-line:nth-child(6) .grid-line__block:first-child{
+        color: rgb(129, 75, 4);
+        text-shadow: 0px 0px 0px rgba(17, 17, 26, 0.29);  
+}
+
+.get_staff-grid-line__name{
+    width: 347px;
+    text-align: left;
+    color: rgb(49, 31, 16);
+    text-shadow: 0px 1px 0px rgba(17, 17, 26, 0.46);
+}
+
+.get_staff-grid-line__competition{
+    width: 227px;
+}
+
+.get_staff-grid-line__age{
+    width: 142px;
+
+}
+.get_staff-grid-line__expierence{
+    width: 160px;
+
+}
