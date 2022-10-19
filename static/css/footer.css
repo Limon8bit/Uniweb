@@ -30,13 +30,18 @@ footer{
     margin-top: 16.5px;
 }
 
-.footer-top-navigation__item{
+.footer-top-navigation-item{
     padding: 0 35px;
     border-left: 1px solid #f1d2b7;
 }
-.footer-top-navigation__item:first-child{
+.footer-top-navigation-item:first-child{
     border: 0;
 }
+
+.footer-top-navigation-item__link{
+        color: rgb(255, 255, 255);    
+}
+
 .footer-bottom{
     width: 100%;
     height: 45px;
@@ -53,6 +58,7 @@ footer{
     font-family: "GaramondC";
     color: rgb(255, 255, 255);
     line-height: 1.2;
+    letter-spacing: 2px;
 }
 
 .footer-bottom__uweb_logo{

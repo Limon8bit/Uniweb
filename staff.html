@@ -24,14 +24,96 @@
                     <div class="header-top-menu">
                         <button class="header-top-menu-button">
                             Оставить заявку
+                            <form action="" class="header-top-menu-button-request">
+                                <div class="header-top-menu-button-request-wrap">
+                                    <input type="text" placeholder="ФИО">
+                                    <input type="tel" placeholder="Телефон">
+                                    <div class="header-top-menu-button-request-wrap-competition">
+                                        <img src="./static/images/select_arrow.png" alt="">
+                                        <input type="text" value="Няня" class="header-top-menu-button-request-wrap-competition" readonly>
+                                        <div class="header-top-menu-button-request-wrap-competition-menu">
+                                            <div class="header-top-menu-button-request-wrap-competition-menu__item">
+                                                Репетитор
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-competition-menu__item">
+                                                Гувернантка
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-competition-menu__item">
+                                                Няня
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-competition-menu__item">
+                                                 Водитель
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-competition-menu__item">
+                                                Садовник
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <div class="header-top-menu-button-request-wrap-work_period">
+                                        <input type="text" placeholder="График работы" class="header-top-menu-button-request-wrap-work_period">
+                                        <img src="./static/images/select_arrow.png" alt="">
+                                        <div class="header-top-menu-button-request-wrap-work_period-menu">
+                                            <div class="header-top-menu-button-request-wrap-work_period-menu__item">
+                                                Полный день
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-work_period-menu__item">
+                                                Пол дня
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-work_period-menu__item">
+                                                График работы
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-work_period-menu__item">
+                                                 несколько часов
+                                            </div>
+                                            <div class="header-top-menu-button-request-wrap-work_period-menu__item">
+                                                Круглосуточно
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <textarea placeholder="Дополнительная информация" rows="3"></textarea>
+                                </div>
+                                <input type="submit" class="header-top-menu-button button-submit">
+                            </form>
                         </button>
                         <button class="header-top-menu-button">
                             Отправить резюме
+                            <form action="" class="header-top-menu-button-resume">
+                                <div class="header-top-menu-button-resume-wrap">
+                                    <input type="text" placeholder="ФИО">
+                                    <input type="tel" placeholder="Телефон">
+                                    <div class="header-top-menu-button-resume-wrap-competition">
+                                        <img src="./static/images/select_arrow.png" alt="">
+                                        <input type="text" class="header-top-menu-button-resume-wrap-competition" readonly placeholder="Должность">
+                                        <div class="header-top-menu-button-resume-wrap-competition-menu">
+                                            <div class="header-top-menu-button-resume-wrap-competition-menu__item">
+                                                Репетитор
+                                            </div>
+                                            <div class="header-top-menu-button-resume-wrap-competition-menu__item">
+                                                Гувернантка
+                                            </div>
+                                            <div class="header-top-menu-button-resume-wrap-competition-menu__item">
+                                                Няня
+                                            </div>
+                                            <div class="header-top-menu-button-resume-wrap-competition-menu__item">
+                                                 Водитель
+                                            </div>
+                                            <div class="header-top-menu-button-resume-wrap-competition-menu__item">
+                                                Садовник
+                                           </div>
+                                        </div>
+                                    </div>
+                                    <input type="text" placeholder="Образование" class="header-top-menu-button-resume-wrap-work_period">
+                                    <label for="file">Прикрепить резюме</label>
+                                    <input type="file" name="file" style="display: none;" id="file">
+                                </div>
+                                <input type="submit" class="header-top-menu-button button-submit">
+                            </form>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="menu">
+            <div class="menu-wrap">
+                <div class="menu">
                     <div class="left-block">
                         <button class="block">
                             <span>главная</span>
@@ -62,42 +144,45 @@
                         </button>
                     </div>
                 </div>
-        </header>
-        <main>
-            <div class="main-dots">
-                <div class="main-dots__dot active_dot">
+            </div>
+            <div class="header-dots">
+                <div class="header-dots__dot active_dot" id="0">
                 </div>
-                <div class="main-dots__dot">
+                <div class="header-dots__dot" id="1">
                 </div>
-                <div class="main-dots__dot">
+                <div class="header-dots__dot" id="2">
                 </div>
-                <div class="main-dots__dot">
+                <div class="header-dots__dot" id="3">
                 </div>
-                <div class="main-dots__dot">
+                <div class="header-dots__dot" id="4">
                 </div>
-                <div class="main-dots__dot">
+                <div class="header-dots__dot" id="5">
                 </div>
             </div>
-
+        </header>
+        <main>
             <div class="get_staff">
                 <h2 class="get_staff__title">Подобрать персонал</h2>
                 <div class="get_staff-form_wrap">
                     <form action="#" method="post">
                         <div class="get_staff-form_wrap-competition">
                             <label for="competition">Показать только</label>
-                            <input type="text" name="competition" value="Няня" class="get_staff-form_wrap-competition-input" readonly>
-                            <div class="get_staff-form_wrap-competition-select">
-                                <div class="get_staff-form_wrap-competition-select__option">
-                                    Садовник
-                                </div>
-                                <div class="get_staff-form_wrap-competition-select__option">
-                                    Водитель
-                                </div>
-                                <div class="get_staff-form_wrap-competition-select__option">
-                                    Дворник
-                                </div>
-                                <div class="get_staff-form_wrap-competition-select__option">
-                                    Гувернантка
+                            <div class="wrap">
+                                <input type="text" name="competition" value="Няня" class="get_staff-form_wrap-competition-input" readonly>
+                                <img src="./static/images/select_arrow.png" alt="">
+                                <div class="get_staff-form_wrap-competition-select">
+                                    <div class="get_staff-form_wrap-competition-select__option">
+                                        Садовник
+                                    </div>
+                                    <div class="get_staff-form_wrap-competition-select__option">
+                                        Водитель
+                                    </div>
+                                    <div class="get_staff-form_wrap-competition-select__option">
+                                        Дворник
+                                    </div>
+                                    <div class="get_staff-form_wrap-competition-select__option">
+                                        Гувернантка
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -281,23 +366,31 @@
         <footer>
             <div class="footer-top">
                 <ul class="footer-top-navigation">
-                    <li class="footer-top-navigation__item">
-                        главная
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">главная</a>
                     </li>
-                    <li class="footer-top-navigation__item">
-                        подобрать персонал
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">подобрать персонал</a>
                     </li>
-                    <li class="footer-top-navigation__item">
-                        цены
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">
+                            цены
+                        </a>
                     </li>
-                    <li class="footer-top-navigation__item">
-                        главная
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">
+                            главная
+                        </a>
                     </li>
-                    <li class="footer-top-navigation__item">
-                        подобрать персонал
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">
+                            подобрать персонал
+                        </a>
                     </li>
-                    <li class="footer-top-navigation__item">
-                        цены
+                    <li class="footer-top-navigation-item">
+                        <a href="" class="footer-top-navigation-item__link">
+                            цены
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -313,7 +406,9 @@
         </footer>
     </div>
     </div>
+    <script src="./static/js/header.js"></script>
     <script src="./static/js/menu.js"></script>
     <script src="./static/js/staffSelect.js"></script>
+    <script src="./static/js/slider.js"></script>
 </body>
 </html>

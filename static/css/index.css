@@ -54,46 +54,12 @@ main{
     background-position: top;
 }
 
-.main-dots{
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.main-dots__dot {
-    border-radius: 50%;
-    background-color: #fadaad;
-    box-shadow: inset 0px 2px 3px 0px rgba(51, 27, 2, 0.75);
-    width: 13px;
-    height: 13px;
-}
-
-.active_dot{
-    border: 1px solid rgba(78, 44, 30, 0.75);
-    border-radius: 50%;
-    background-color: #652e02;
-    position: relative;
-    background-color: rgba(78, 44, 30, 0.75);  
-}
-
-.active_dot::after{
-    content: '';
-    width: 11px;
-    height: 11px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
 .staff-info{
     display: flex;
     width: 880px;
     justify-content: space-evenly;
     position: relative;
-    margin-top: 25px;
+    margin-top: 52px;
 }
 
 .staff-info::before{
@@ -109,6 +75,10 @@ main{
     width: 375px;
     padding-top: 22px;
     z-index: 2;
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(53, 25, 13);
+    line-height: 1.2;
 }
 
 .staff-info-box__title{
@@ -172,10 +142,7 @@ main{
     line-height: 1.2;
     text-align: center;
     text-transform: uppercase;
-    text-shadow: 
-        0 1px 1px rgba(17, 17, 26, 0.46), 
-        -1px 0 1px rgba(17, 17, 26, 0.46),
-        1px 0 1px rgba(17, 17, 26, 0.46);
+    text-shadow:0 1px 1px rgba(17, 17, 26, 0.46);
     margin-left: calc(100% - 126px);
     cursor: pointer;
 }

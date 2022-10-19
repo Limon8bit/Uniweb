@@ -5,11 +5,9 @@ header{
     display: flex;
     flex-direction: column;
     position: relative;
-    background-image: url('../images/slider/1.png');
     background-position-y: 12px;
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
-    animation: slider 30s infinite step-start;
-    /* animation-fill-mode: forwards ; */
+    background-image: url('../images/slider/1.png');
 }
 
 .header-top__wrap{
@@ -63,6 +61,7 @@ header{
     line-height: 1.2;
     text-shadow: 0 1px 1px rgba(17, 17, 26, 0.46);
     cursor: pointer;
+    position: relative;
 }
 
 .header-top-menu-button:focus{
@@ -72,29 +71,185 @@ header{
     color: rgb(255, 255, 255);
 }
 
-@keyframes slider {
-    16.7% {
-        background-image: url(../images/slider/1.png);
-    }
+.header-top-menu-button-request,
+.header-top-menu-button-resume{
+    width: 322px;
+    height: 340px;
+    padding-top: 12px;
+    border: 1px solid rgb(205, 142, 49);
+    border-radius: 3px;
+    background-color: rgba(247,236,212, 0.87);
+    position: absolute;
+    top: 30px;
+    left: -150px;
+    z-index: 2;
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 13px;
+}
 
-    33.4%{
-        background-image: url(../images/slider/2.png);
-    }
+.header-top-menu-button-resume{
+    height: 294px;
+}
 
-    50%{
-        background-image: url(../images/slider/3.png);
-    }
+.header-top-menu-button-request-wrap,
+.header-top-menu-button-resume-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 256px;
+}
 
-    67%{
-        background-image: url(../images/slider/4.png);
-    }
+.header-top-menu-button-resume-wrap{
+    height: 214px;
+}
 
-    83%{
-        background-image: url(../images/slider/5.png);
-    }
+.header-top-menu-button-request-wrap input, 
+.header-top-menu-button-request-wrap textarea,
+.header-top-menu-button-resume-wrap input,
+.header-top-menu-button-resume-wrap label{
+    width: 310px;
+    height: 33px;
+    border: 1px solid rgb(171, 110, 23);
+    background-color: #fff;
+    border-radius: 1px;
+    box-sizing: border-box;
+    outline: 0;
+    padding-left: 10px;
+    resize: none;
+}
 
-    100%{
-        background-image: url(../images/slider/6.png);
-    }
-    
+.header-top-menu-button-request-wrap input,
+.header-top-menu-button-request-wrap input::placeholder,
+.header-top-menu-button-request-wrap textarea::placeholder,
+.header-top-menu-button-resume-wrap input,
+.header-top-menu-button-resume-wrap input::placeholder{
+    font-size: 14px;
+    font-family: "Verdana";
+    color: rgb(85, 73, 63);
+    line-height: 1.2;
+}
+
+.header-top-menu-button-request-wrap-competition, 
+.header-top-menu-button-request-wrap-work_period,
+.header-top-menu-button-resume-wrap-competition{
+    position: relative;
+    background-image: url('../images/select_background.png');
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    cursor: pointer;
+}
+
+.header-top-menu-button-request-wrap-competition img, 
+.header-top-menu-button-request-wrap-work_period img,
+.header-top-menu-button-resume-wrap-competition img{
+    position: absolute;
+    width: 19px;
+    height: 11px;
+    top: 11.5px;
+    right: 4px;
+    z-index: 2;
+}
+
+.header-top-menu-button-request-wrap-competition-menu,
+.header-top-menu-button-request-wrap-work_period-menu,
+.header-top-menu-button-resume-wrap-competition-menu{
+    width: 310px;
+    height: 160px;
+    border: 1px solid #cd8e31;
+    box-sizing: border-box;
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    background-color: rgb(252,235,198);
+    display: none;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.header-top-menu-button-request-wrap-competition-menu__item,
+.header-top-menu-button-request-wrap-work_period-menu__item,
+.header-top-menu-button-resume-wrap-competition-menu__item{
+    font-size: 14px;
+    font-family: "Verdana";
+    color: rgb(69, 37, 10);
+    line-height: 2.3;
+    text-align: left;
+    padding-left: 11px;
+}
+
+.header-top-menu-button-request-wrap-competition-menu__item:hover,
+.header-top-menu-button-resume-wrap-competition-menu__item:hover,
+.header-top-menu-button-request-wrap-work_period-menu__item:hover{
+    background-color: #d8af75;
+}
+
+/* Вроде бы цвет один и тот же с инпутами и ph-ами, 
+но они выглядят по разному, не могу понять в чём дело */
+.header-top-menu-button-resume-wrap label{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: "Verdana";
+    color: rgb(85, 73, 63);
+    line-height: 1.2;
+    cursor: pointer;
+}
+
+.header-top-menu-button-request-wrap textarea{
+   height: 74px;
+   padding-top: 10px;
+}
+
+.button-submit{
+    width:143px;
+    background-image: -moz-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(250,237,199) 0%, rgb(119,71,11) 0%, rgb(211,149,56) 73%, rgb(245,220,185) 96%, rgb(255,249,224) 100%);
+    border: 1px solid rgb(171, 110, 23);
+    color: rgb(255, 255, 255);
+    z-index: 1;
+}
+
+.header-dots{
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 85px);
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-dots__dot {
+    border-radius: 50%;
+    background-color: #fadaad;
+    box-shadow: inset 0px 2px 3px 0px rgba(51, 27, 2, 0.75);
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+}
+
+.active_dot{
+    border: 1px solid rgba(78, 44, 30, 0.75);
+    border-radius: 50%;
+    background-color: #652e02;
+    position: relative;
+    background-color: rgba(78, 44, 30, 0.75);  
+}
+
+.active_dot::after{
+    content: '';
+    width: 11px;
+    height: 11px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
