@@ -1,3 +1,28 @@
+@font-face {
+    font-family: 'BookAntiqua';
+    src: url('../fonts/bookantiqua.woff2');
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/Verdana.woff');
+}
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url('../fonts/Tahoma.woff2');
+}
+
+@font-face {
+    font-family: 'GaramondC';
+    src: url('../fonts/PFGaramondClassic.woff2');
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url('../fonts/ArialMT.woff2');
+}
+
 .get_staff{
     margin-top: 56px;
     width: 100%;
